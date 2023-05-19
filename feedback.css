@@ -503,7 +503,10 @@ label.howDidknow {
 .feebackForm div .gotTap{
     width: 112px;
 }
-
+#mobileNum a{
+    color: #000;
+    text-decoration: none;
+}
 .feebackForm .gotTap,
 .feebackForm .gotTapHlpOrNot{
     background: transparent;

@@ -9,7 +9,10 @@
     /* font-family: 'Unbounded', sans-serif; */
     /* width: 100%; */
 }
-
+#mobileNum a{
+    color: #000;
+    text-decoration: none;
+}
 #shoSubMenu:hover i{
     transform: rotate(180deg);
 }
