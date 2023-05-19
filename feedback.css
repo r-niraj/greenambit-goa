@@ -538,7 +538,7 @@ label.testSlectFile{
     align-items: center;
     margin-top: 20px;
     border: 1px solid #1E4F4C;
-    width: min-content;
+    width: 116px;
     border-radius: 15px;
     padding: 0 10px;
 }
