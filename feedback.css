@@ -516,6 +516,7 @@ label.howDidknow {
     outline: none;
     transition: 0.3s all ease-in-out;
     cursor: pointer;
+    color: #000;
 }
 
 textarea.feedbackText{
