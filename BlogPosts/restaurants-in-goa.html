@@ -335,6 +335,8 @@
 
             $(document).on('click', 'li#shoSubMenu', function () {
                 $(this).find('ul').slideToggle();
+                $("#shoSubMenu i").eq(1).hasClass('fa-chevron-down')?$("#shoSubMenu i").eq(1).removeClass('fa-chevron-down').addClass('fa-chevron-up'):$("#shoSubMenu i").eq(1).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+
             });
         });
     </script>
