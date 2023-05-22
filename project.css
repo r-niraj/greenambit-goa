@@ -753,8 +753,17 @@ footer .bottom-details .bottom_text {
         font-size: 20px;
         line-height: 23px;
     }
+    .tagline-wrapper a{
+        text-decoration: none;
+    }
     .button{
        padding: 11px 45px;
+    }
+    .button.customWidth{
+        width: 166px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .mobile.whyGoa{
         margin-bottom: 20px;
@@ -803,6 +812,9 @@ footer .bottom-details .bottom_text {
     }
     #shoSubMenu ul li a{
         font-size: 18px;
+    }
+    .center{
+        width: 96%;
     }
 }
 @media (min-width:1201px){

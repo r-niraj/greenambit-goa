@@ -694,9 +694,10 @@ footer .content .link-boxes ul:first-child{
     /* responsive content starts here */
     .img {
         background: url('img/All Images/About Us/about_slider.png');
-        background-size: 100vw 93vh;
+        background-size: 100vw 100vh;
         background-repeat: no-repeat;
         background-color: #eaece3;
+        background-position: 0 -47px;
     }
     .rent-info{
         flex-direction: column;

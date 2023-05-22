@@ -479,7 +479,9 @@ footer .content .link-boxes ul:first-child{
     outline: none;
     background: #96B7A8;
     border-radius: 19px;
-    padding: 10px;
+    /* padding: 10px; */
+    height: 38px;
+    color:#000;
     margin-top: 31px;
     transition: 0.2s all ease-in-out;
 }

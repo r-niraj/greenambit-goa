@@ -1187,6 +1187,15 @@ footer .bottom-details .bottom_text {
     .stickyFooter.mobile .fa-brands{
         margin-right: 10px;
     }
+    .img .curvewave{
+        background-image: url(img/curve.png);
+        width: 100%;
+        height: 132px;
+        background-size: 100% 107px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -32px;
+    }
 }
 
 @media (min-width:1201px){
@@ -1202,7 +1211,6 @@ footer .bottom-details .bottom_text {
     .mobile{
         display: none !important;
     }
-    
 }
 
 /* bootstrap integration */
