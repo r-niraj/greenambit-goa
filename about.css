@@ -772,7 +772,9 @@ footer .content .link-boxes ul:first-child{
     #shoSubMenu ul li a{
         font-size: 18px;
     }
-
+    .center{
+        top: 70%;
+    }
 }
 @media (min-width: 1201px){
     #showHamMenu,.hamburger,.mobile-menu{
