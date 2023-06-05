@@ -106,7 +106,7 @@
             address way beyond a recognition. An address what you call ' A Greenambit Living'.
         </p>
         <div class="btn">
-            <button class="button" style="padding:11px 23px;">REACH OUT TO US <i class="fa-solid fa-arrow-right"
+            <button class="button scrl2btm" style="padding:11px 23px;" >REACH OUT TO US <i class="fa-solid fa-arrow-right"
                     style="margin-left: 30px; transform:rotate(-45deg)"></i></button>
         </div>
     </div>
@@ -511,6 +511,13 @@
             },'slow');
         }
 
+
+        $('.scrl2btm').click(function () {
+        $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 'fast');
+        return false;
+    });
 
         var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
         { widgetcode: "40ff8dba45fd15e4347c69b49cbbc1d8069a29167c93a5d2f492b6f0b402c9ddecbe33e741b388ef61c19b24c5955c63", values: {}, ready: function () { } };
