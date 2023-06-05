@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/favIcon.png" type="image/x-icon">
 
     <style>
         .js-reveal {
-        opacity: 1;
-        transition: opacity .7s ease-in, margin-top .7s ease-out;
+            opacity: 1;
+            transition: opacity .7s ease-in, margin-top .7s ease-out;
         }
 
         .js-reveal--hidden {
-        opacity: 0;
-        margin-top: 3em;
+            opacity: 0;
+            margin-top: 3em;
         }
-        #mobileNum a{
+
+        #mobileNum a {
             color: #000;
             text-decoration: none;
         }
@@ -48,11 +49,15 @@
                 <li><a href="./index.html" class="active">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <li style="position: relative;" id="shoSubMenu">
-                    <a href="#">Projects <i class="fa-solid fa-chevron-down" style="font-size: 16px;transition: 0.2s all ease-in-out;"></i></a>
-                    <ul class="subMenu">
-                        <li><a href="#">THE CALISSA  (COMPLETED) </a></li>
-                        <li><a href="#">VILLAS COMING SOON </a></li>
-                    </ul>
+                    <a href="#">Projects <i class="fa-solid fa-chevron-down"
+                            style="font-size: 16px;transition: 0.2s all ease-in-out;"></i></a>
+                    <div style="position:absolute; top: 8px;width: 108px;z-index: -1;height: 32px;">
+                        <ul class="subMenu onPhoneUnwrap">
+                            <li><a href="#"><span style="font-family: 'Open Sans';font-weight: 600;">THE CALISSA </span>(COMPLETED) </a></li>
+                            <li><a href="#"><span style="font-family: 'Open Sans';font-weight: 600;">VILLAS COMING SOON</span></a></li>
+                        </ul>
+                    </div>
+
                 </li>
                 <li><a href="./careers.html">Careers</a></li>
                 <li class="desktop"><a href="./blogs.html">Blogs</a></li>
@@ -69,18 +74,40 @@
             <i class="fa fa-phone" aria-hidden="true"></i><span id="mobileNum">+91-9022783834</span>
         </div>
 
-        
 
-    <div class="social-icons">
+
+        <div class="social-icons">
             <ul class="social-media" style="padding: 0;">
                 <li>
-                    <div onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');"><i class="fa-brands fa-instagram"></i></div>
+                    <div
+                        onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
                 </li>
                 <li>
-                    <div onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div
+                        onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
                 </li>
                 <li>
-                    <div onclick="window.open('http://twitter.com/','mywindow');"><i class="fa-brands fa-twitter"></i></div>
+                    <div onclick="window.open('http://twitter.com/','mywindow');"><i class="fa-brands fa-twitter"></i>
+                    </div>
+                </li>
+                <li>
+                    <div
+                        onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');">
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i class="fa fa-pinterest-p"></i>
+                    </div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');">
+                        <i class="fa fa-youtube-play"></i>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -91,7 +118,7 @@
             <video autoplay muted loop style="width: 100%; height: 100vh;object-fit: fill;" class="desktop">
                 <source src="img/video.mp4" type="video/mp4" />
             </video>
-            <video autoplay muted loop  playsinline style="width: 100%; height: 94vh;object-fit: fill;" class="mobile">
+            <video autoplay muted loop playsinline style="width: 100%; height: 94vh;object-fit: fill;" class="mobile">
                 <source src="img/video-mobile.mp4" type="video/mp4" />
             </video>
             <div class="curvewave"></div>
@@ -263,7 +290,7 @@
                         beyond a recognition.
                     </p>
                     <div class="btnn">
-                        <button class="btn-1">REACH OUT TO US <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn-1 scrl2btm">REACH OUT TO US <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
 
                 </div>
@@ -360,7 +387,7 @@
         </h3>
 
         <div class="btnn">
-            <button class="btn-1">LET'S TALK ABOUT IT <i class="fa-solid fa-arrow-right"></i></button>
+            <button class="btn-1 scrl2btm">LET'S TALK ABOUT IT <i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
     </div>
@@ -373,7 +400,8 @@
             <div class="link-boxes">
                 <ul class="box">
                     <div class="contact-box js-reveal">
-                        <li class="link_name cont"><img src="img/Waves-footer.png" alt="" width="45"> Connect with us</li>
+                        <li class="link_name cont"><img src="img/Waves-footer.png" alt="" width="45"> Connect with us
+                        </li>
                         <div class="right">
                             <form action="" method="post">
                                 <input type="text" class="field" placeholder="Name*">
@@ -386,21 +414,22 @@
                     </div>
                     <div class="newsletter mobile" style="margin: 43px 0;">
                         <li class="link_name">SUBSCRIBE TO OUR NEWSLETTER</li>
-                    <ul style="padding: 0;">
-                        <li>
-                            <div style="border: none;width: 100%;margin: 8px 0;">
-                                <form action="" method="post">
-                                    <input type="text" style="background: transparent;
+                        <ul style="padding: 0;">
+                            <li>
+                                <div style="border: none;width: 100%;margin: 8px 0;">
+                                    <form action="" method="post">
+                                        <input type="text" style="background: transparent;
                                     border: 1.5px solid #fff;
                                     padding: 11px 8px;
                                     width: 100%;
                                     border-radius: 10px;
                                     margin: 17px 0;" placeholder="Email*" required>
-                                    <input type="submit" value="SUBSCRIBE" style="color:#000; width: 100%;height:40px;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
-                                </form>
-                            </div>
-                        </li>
-                    </ul>
+                                        <input type="submit" value="SUBSCRIBE"
+                                            style="color:#000; width: 100%;height:40px;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </ul>
                 <ul class="box js-reveal" style="position: relative; padding: 0; margin-left: 5%;">
@@ -417,22 +446,36 @@
                             <li>
                                 <ul class="social-media" style="padding: 0;">
                                     <li>
-                                        <div onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');"><i class="fa-brands fa-instagram"></i></div>
+                                        <div
+                                            onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');"><i class="fa-brands fa-facebook-f"></i></div>
+                                        <div
+                                            onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div onclick="window.open('http://twitter.com/','mywindow');"><i class="fa-brands fa-twitter"></i></div>
+                                        <div onclick="window.open('http://twitter.com/','mywindow');"><i
+                                                class="fa-brands fa-twitter"></i></div>
                                     </li>
                                     <li>
-                                        <div onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');"><i class="fa fa-linkedin"></i></div>
+                                        <div
+                                            onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');">
+                                            <i class="fa fa-linkedin"></i>
+                                        </div>
                                     </li>
                                     <li>
-                                        <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i class="fa fa-pinterest-p"></i></div>
+                                        <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i
+                                                class="fa fa-pinterest-p"></i></div>
                                     </li>
                                     <li>
-                                        <div onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');"><i class="fa fa-youtube-play"></i></div>
+                                        <div
+                                            onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </div>
                                     </li>
                                 </ul>
                             </li>
@@ -466,7 +509,8 @@
                                     width: 308px;
                                     border-radius: 10px;
                                     margin: 17px 0;" placeholder="Email*" required>
-                                    <input type="submit" value="SUBSCRIBE" style="width: 311px;padding: 0.6rem 1rem;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
+                                    <input type="submit" value="SUBSCRIBE"
+                                        style="width: 311px;padding: 0.6rem 1rem;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
                                 </form>
                             </div>
                         </li>
@@ -480,22 +524,35 @@
                     <li class="link_name">SOCIAL</li>
                     <ul class="social-media" style="padding: 0;">
                         <li>
-                            <div onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');"><i class="fa-brands fa-instagram"></i></div>
+                            <div
+                                onclick="window.open('http://instagram.com/greenambit.homes.goa?igshid=NTc4MTIwNjQ2YQ==','mywindow');">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
                         </li>
                         <li>
-                            <div onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');"><i class="fa-brands fa-facebook-f"></i></div>
+                            <div
+                                onclick="window.open('https://www.facebook.com/greenambitluxuryresidencesgoa?mibextid=LQQJ4d','mywindow');">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
                         </li>
                         <li>
-                            <div onclick="window.open('http://twitter.com/','mywindow');"><i class="fa-brands fa-twitter"></i></div>
+                            <div onclick="window.open('http://twitter.com/','mywindow');"><i
+                                    class="fa-brands fa-twitter"></i></div>
                         </li>
                         <li>
-                            <div onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');"><i class="fa fa-linkedin"></i></div>
+                            <div
+                                onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
                         </li>
                         <li>
-                            <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i class="fa fa-pinterest-p"></i></div>
+                            <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i
+                                    class="fa fa-pinterest-p"></i></div>
                         </li>
                         <li>
-                            <div onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');"><i class="fa fa-youtube-play"></i></div>
+                            <div onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');">
+                                <i class="fa fa-youtube-play"></i>
+                            </div>
                         </li>
                     </ul>
                     <div class="copyRightTxt">
@@ -510,9 +567,13 @@
         </div>
     </footer>
     <div class="stickyFooter mobile">
-        <div class="item" onclick="parent.location='mailto:info@greenambit.com'"><i class="fa fa-envelope" aria-hidden="true"></i> Mail</div>
-        <div class="item" onclick="window.open('https://api.whatsapp.com/send?phone=+919022783834&text=%20Hi','mywindow')"><i class="fa-brands fa-whatsapp"></i> Whatsapp</div>
-        <div class="item" onclick="window.open ('tel:919022783834');"><i class="fa fa-phone" aria-hidden="true"></i>Call</div>
+        <div class="item" onclick="parent.location='mailto:info@greenambit.com'"><i class="fa fa-envelope"
+                aria-hidden="true"></i> Mail</div>
+        <div class="item"
+            onclick="window.open('https://api.whatsapp.com/send?phone=+919022783834&text=%20Hi','mywindow')"><i
+                class="fa-brands fa-whatsapp"></i> Whatsapp</div>
+        <div class="item" onclick="window.open ('tel:919022783834');"><i class="fa fa-phone" aria-hidden="true"></i>Call
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -548,14 +609,37 @@
 
         $(document).on('click', 'li#shoSubMenu', function () {
             $(this).find('ul').slideToggle();
-            $("#shoSubMenu i").eq(1).hasClass('fa-chevron-down')?$("#shoSubMenu i").eq(1).removeClass('fa-chevron-down').addClass('fa-chevron-up'):$("#shoSubMenu i").eq(1).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+            $("#shoSubMenu i").eq(1).hasClass('fa-chevron-down') ? $("#shoSubMenu i").eq(1).removeClass('fa-chevron-down').addClass('fa-chevron-up') : $("#shoSubMenu i").eq(1).removeClass('fa-chevron-up').addClass('fa-chevron-down');
         });
 
         function openPage(pageUrl) {
-            window.open(pageUrl , "_self");
+            window.open(pageUrl, "_self");
         }
         $.fn.scrollReveal();
     });
-</script>
 
+
+    $('.scrl2btm').click(function () {
+        $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 'fast');
+        return false;
+    });
+
+
+    function SubMenuonPhone() {
+        if ($(window).width() < 1366) {
+            $(".onPhoneUnwrap").unwrap();
+        }
+    }
+    SubMenuonPhone();
+    $(window).on('resize', function () {
+        SubMenuonPhone();
+    });
+
+    var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+        { widgetcode: "40ff8dba45fd15e4347c69b49cbbc1d8069a29167c93a5d2f492b6f0b402c9ddecbe33e741b388ef61c19b24c5955c63", values: {}, ready: function () { } };
+    var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+    s.src = "https://salesiq.zoho.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+</script>
 </html>

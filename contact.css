@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Unbounded:wght@200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Unbounded:wght@200;300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -301,7 +300,7 @@ footer .content .link-boxes ul:first-child{
 }
 .copyRightTxt{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -600,7 +599,7 @@ footer .bottom-details .bottom_text {
         top: 74px;
         overflow: hidden;
         transform: translateX(-100%);
-        transition: all 0.4s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        transition: all 0.6s ease-in-out;
     }
    
     input#showHamMenu{
@@ -762,6 +761,14 @@ footer .bottom-details .bottom_text {
     #shoSubMenu ul li a{
         font-size: 18px;
     }
+
+    /* chat plugin styles */
+    .zsiq_theme1 div.zsiq_cnt {
+        display: none !important;
+    }
+    .zsiq_theme1.zsiq_floatmain {
+        bottom: 67px;
+    }
 }
 @media (min-width: 1201px){
     #showHamMenu,.hamburger,.mobile-menu{
@@ -769,5 +776,10 @@ footer .bottom-details .bottom_text {
     }
     .mobile{
         display: none !important;
+    }
+
+     /* chat plugin styles */
+     .zsiq_theme1 div.zsiq_cnt {
+        display: block;
     }
 }

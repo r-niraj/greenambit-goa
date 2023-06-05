@@ -33,10 +33,12 @@
                 <li><a href="./about.html">About Us</a></li>
                 <li style="position: relative;" id="shoSubMenu">
                     <a href="#">Projects <i class="fa-solid fa-chevron-down" style="font-size: 16px;transition: 0.2s all ease-in-out;"></i></a>
-                    <ul class="subMenu">
-                        <li><a href="#">THE CALISSA  (COMPLETED) </a></li>
-                        <li><a href="#">VILLAS COMING SOON </a></li>
-                    </ul>
+                    <div style="position:absolute; top: 8px;width: 108px;z-index: -1;height: 32px;">
+                        <ul class="subMenu onPhoneUnwrap">
+                            <li><a href="#"><span style="font-family: 'Open Sans';font-weight: 600;">THE CALISSA </span>(COMPLETED) </a></li>
+                            <li><a href="#"><span style="font-family: 'Open Sans';font-weight: 600;">VILLAS COMING SOON</span></a></li>
+                        </ul>
+                   </div>
                 </li>
                 <li><a href="./careers.html">Careers</a></li>
                 <li class="desktop"><a href="./blogs.html">Blogs</a></li>
@@ -62,6 +64,19 @@
                 </li>
                 <li>
                     <div onclick="window.open('http://twitter.com/','mywindow');"><i class="fa-brands fa-twitter"></i></div>
+                </li>
+                <li>
+                    <div
+                        onclick="window.open('https://www.linkedin.com/in/greenambit-homes-goa-6157b513b','mywindow');">
+                        <i class="fa fa-linkedin"></i></div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://pin.it/40qZBwb','mywindow');"><i
+                            class="fa fa-pinterest-p"></i></div>
+                </li>
+                <li>
+                    <div onclick="window.open('https://youtube.com/@greenambitinfrastructure1789','mywindow');">
+                        <i class="fa fa-youtube-play"></i></div>
                 </li>
             </ul>
         </div>
@@ -391,6 +406,21 @@
 
             $(gotSelected).val()==="Others"? $('.feedbackText.writeSource').show():$('.feedbackText.writeSource').hide();
         }
+
+        function SubMenuonPhone() {
+            if ($(window).width() < 1366) {
+                $(".onPhoneUnwrap").unwrap();
+            }
+        }
+        SubMenuonPhone();
+        $(window).on('resize', function () {
+            SubMenuonPhone();
+        });
+
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
+        { widgetcode: "40ff8dba45fd15e4347c69b49cbbc1d8069a29167c93a5d2f492b6f0b402c9ddecbe33e741b388ef61c19b24c5955c63", values: {}, ready: function () { } };
+    var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;
+    s.src = "https://salesiq.zoho.in/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
     </script>
 </body>
 
