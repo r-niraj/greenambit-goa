@@ -411,14 +411,14 @@
         }
 
         function SubMenuonPhone() {
-            if ($(window).width() < 1366) {
+            if ($(window).width() < 1200) {
                 $(".onPhoneUnwrap").unwrap();
             }
         }
         SubMenuonPhone();
-        $(window).on('resize', function () {
-            SubMenuonPhone();
-        });
+        // $(window).on('resize', function () {
+        //     SubMenuonPhone();
+        // });
 
         var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
         { widgetcode: "40ff8dba45fd15e4347c69b49cbbc1d8069a29167c93a5d2f492b6f0b402c9ddecbe33e741b388ef61c19b24c5955c63", values: {}, ready: function () { } };

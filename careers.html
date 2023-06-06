@@ -348,14 +348,14 @@
         });
 
         function SubMenuonPhone() {
-            if ($(window).width() < 1366) {
+            if ($(window).width() < 1200) {
                 $(".onPhoneUnwrap").unwrap();
             }
         }
         SubMenuonPhone();
-        $(window).on('resize', function () {
-            SubMenuonPhone();
-        });
+        // $(window).on('resize', function () {
+        //     SubMenuonPhone();
+        // });
 
 
         var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
