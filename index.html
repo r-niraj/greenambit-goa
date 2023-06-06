@@ -621,14 +621,14 @@
 
     $('.scrl2btm').click(function () {
         $('html, body').animate({
-            scrollTop: $(document).height()
+            scrollTop: $('.contact-box.js-reveal').offset().top-90
         }, 'fast');
         return false;
     });
 
 
     function SubMenuonPhone() {
-        if ($(window).width() < 1366) {
+        if ($(window).width() < 1200) {
             $(".onPhoneUnwrap").unwrap();
         }
     }

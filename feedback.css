@@ -26,6 +26,35 @@ nav .menu {
     padding: 0 20px;
 }
 
+.contact-enq {
+    width: 31px;
+    font-size: 20px;
+    height: 100px;
+    background: #BFDDCF;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 9;
+    position: fixed;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.contact-enq span {
+    transform: rotate(-90deg);
+    display: block;
+}
+a.toFormSec {
+    color: #000 !important;
+}
+.contact-enq:hover {
+    width: 40px;
+    background-color: #8eafa0;
+}
+
 .logo img {
     width: 130px;
     margin-left: 10px;
