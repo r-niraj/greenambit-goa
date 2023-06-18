@@ -18,7 +18,7 @@
     <nav>
         <div class="menu">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="../img/logo.png" alt="">
                 </a>
             </div>
@@ -47,7 +47,7 @@
             </ul>
         </div>
     </nav>
-    <a href="#toForm" class="toFormSec desktop">
+    <a href="#" class="toFormSec desktop scrl2btm">
         <div class="contact-enq"><span>Enquire</span></div>
     </a>
     <div class="mobile-menu">
@@ -241,7 +241,7 @@
                     </ul>
     
                 </ul>
-                <ul class="box desktop" style="position: relative; padding-left: 0;width: 444px;">
+                <ul class="box desktop" style="position: relative; padding-left: 0;width: 444px;z-index: 9;">
                     <li class="link_name" style="margin-bottom: 31px;">SUBSCRIBE TO OUR NEWSLETTER</li>
                     <ul class="social-media" style="padding: 0;">
                         <li>
@@ -251,9 +251,10 @@
                                     border: 1.5px solid #fff;
                                     padding: 11px 8px;
                                     width: 308px;
+                                    color: #fff;
                                     border-radius: 10px;
                                     margin: 17px 0;" placeholder="Email*" required>
-                                    <input type="submit" value="SUBSCRIBE" style="width: 311px;padding: 0.6rem 1rem;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
+                                    <input type="submit" value="SUBSCRIBE" style="width: 311px;padding: 0.6rem 1rem;cursor:pointer;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
                                 </form>
                             </div>
                         </li>
@@ -346,6 +347,12 @@
         //     SubMenuonPhone();
         // });
 
+        $('.scrl2btm').click(function () {
+        $('html, body').animate({
+            scrollTop: $(document).height()
+        }, 800);
+        return false;
+    });
         var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq ||
         { widgetcode: "40ff8dba45fd15e4347c69b49cbbc1d8069a29167c93a5d2f492b6f0b402c9ddecbe33e741b388ef61c19b24c5955c63", values: {}, ready: function () { } };
     var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true;

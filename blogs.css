@@ -259,7 +259,7 @@ body{
 }
 
 .blogs {
-    padding: 119px 5% 53px 5%;
+    padding: 0 5% 53px 5%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 52px;

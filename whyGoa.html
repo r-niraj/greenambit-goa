@@ -18,7 +18,7 @@
     <nav>
         <div class="menu">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="img/logo.png" alt="">
                 </a>
             </div>
@@ -48,7 +48,7 @@
             </ul>
         </div>
     </nav>
-    <a href="#toForm" class="toFormSec desktop">
+    <a href="#" class="toFormSec desktop scrl2btm">
         <div class="contact-enq"><span>Enquire</span></div>
     </a>
     <div class="mobile-menu">
@@ -379,7 +379,7 @@
                     </ul>
 
                 </ul>
-                <ul class="box desktop" style="position: relative; padding-left: 0;width: 444px;">
+                <ul class="box desktop" style="position: relative; padding-left: 0;width: 444px;z-index: 9;">
                     <li class="link_name" style="margin-bottom: 31px;">SUBSCRIBE TO OUR NEWSLETTER</li>
                     <ul class="social-media" style="padding: 0;">
                         <li>
@@ -389,10 +389,10 @@
                                     border: 1.5px solid #fff;
                                     padding: 11px 8px;
                                     width: 308px;
+                                    color: #fff;
                                     border-radius: 10px;
                                     margin: 17px 0;" placeholder="Email*" required>
-                                    <input type="submit" value="SUBSCRIBE"
-                                        style="width: 311px;padding: 0.6rem 1rem;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
+                                    <input type="submit" value="SUBSCRIBE" style="width: 311px;padding: 0.6rem 1rem;cursor:pointer;border-radius:35px;background: #DED7C3;position:relative;z-index:9;border:none;">
                                 </form>
                             </div>
                         </li>
@@ -493,6 +493,10 @@
 
             });
 
+            $(window).scrollTop(800);
+       setTimeout(function(){
+        $(window).scrollTop(0);
+       },800);
             //    whatspp send message
         });
 
@@ -518,7 +522,7 @@
         $('.scrl2btm').click(function () {
         $('html, body').animate({
             scrollTop: $(document).height()
-        }, 'fast');
+        }, 1500);
         return false;
     });
 
