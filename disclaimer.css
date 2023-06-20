@@ -116,18 +116,17 @@ nav .menu {
     /* background-color: #EAECE3; */
 }
 
-.subMenu{
+.subMenu {
     background: #EAECE3;
     border-radius: 10px;
     text-align: center;
     font-size: 14px;
-    /* display: block !important; */
-    width: 223px;
+    width: 142px;
     z-index: -1;
     position: absolute;
     top: 31px;
-    padding:0;
-    /* transform: translateY(-180%); */
+    left: 0;
+    padding: 8px 15px;
     transition: all 0.2s ease-in-out;
     display: none !important;
 }
@@ -149,35 +148,12 @@ nav .menu {
 }
 .subMenu a{
     text-decoration: none;
-    color: #000;
+    color: #003937;
 }
 
-ul.subMenu li:first-child:hover{
-    background-color: #003937;
-    color:white !important;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
 ul.subMenu li:hover a{
-    color:white;
+    color:#000;
 }
-ul.subMenu li:nth-child(2):hover{
-    background-color: #003937;
-    color:white;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/* .showShown{
-    background-color: #BFDDCF;
-    padding: 6.7px 0px;
-    border-radius: 50px;
-    position: relative;
-} */
 
 .menu ul {
     display: inline-flex;
