@@ -594,7 +594,7 @@ footer .bottom-details .bottom_text {
         z-index: 10;
         top: 74px;
         overflow: hidden;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: all 0.6s ease-in-out;
     }
    
