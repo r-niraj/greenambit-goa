@@ -471,17 +471,18 @@ a.toFormSec {
 
 .project-img-Calissa .image {
     background-image: url('./img/All Images/Homepage/thecalissa.jpg');
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 .project-img-Isadora .image {
     background-image: url('./img/img-5.png');
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .project-img-Calissa .image:hover,
 .project-img-Isadora .image:hover{
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 .project-img-Calissa .image:hover .imgText,
@@ -490,13 +491,13 @@ a.toFormSec {
     color: #000;
 }
 
-.project-img-Calissa .image:hover .imgOverlay,
+/* .project-img-Calissa .image:hover .imgOverlay,
 .project-img-Isadora .image:hover .imgOverlay{
     cursor: pointer;
     left: 0%;
     opacity: 1;
     transform: scale(1);
-}
+} */
 
 .imgOverlay{
     width: 100%;
