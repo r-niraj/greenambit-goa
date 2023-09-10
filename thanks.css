@@ -343,7 +343,7 @@ ul.subMenu li:hover a{
 .treeFooter{
     width: 423px;
     height: 457px;
-    background-image: url(../img/Tree_Illustration.png);
+    background-image: url(./img/Tree_Illustration.png);
     position: absolute;
     bottom: 0;
     background-size: contain;
@@ -825,7 +825,7 @@ footer .bottom-details .bottom_text {
         display: none !important;
     }
     .main-container{
-        background-image: url("../img/WavesSymbolRental.png");
+        background-image: url("./img/WavesSymbolRental.png");
         background-position: -15px;
         background-size: 544px;
         background-repeat: no-repeat;
