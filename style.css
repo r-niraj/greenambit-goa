@@ -13,7 +13,7 @@
 nav {
     position: fixed;
     background: #fff;
-    width: 100%;
+    width: 100vw;
     padding: 10px 0;
     z-index: 9999;
     top: -1;
@@ -959,7 +959,7 @@ footer .bottom-details .bottom_text {
         width: 100%;
         height: calc(100vh - 65px);
         background: #dbe1d7;
-        position: absolute;
+        position: fixed;
         z-index: 10;
         top: 65px;
         overflow: hidden;

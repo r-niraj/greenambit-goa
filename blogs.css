@@ -691,7 +691,7 @@ footer .bottom-details .bottom_text {
         width: 100%;
         height: calc(100vh - 74px);
         background: #dbe1d7;
-        position: absolute;
+        position: fixed;
         z-index: 10;
         top: 74px;
         overflow: hidden;
