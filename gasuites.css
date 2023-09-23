@@ -276,12 +276,14 @@ body{
     vertical-align: top;
     display: flex;
     flex-direction: column;
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     border: 1px solid rgb(28, 82, 61);
     align-items: center;
     border-radius: 30px;
-    margin-bottom:54px;
+    margin-bottom: 54px;
+    font-size: 15px;
+    padding: 0 9px;
 }
 
 
@@ -301,7 +303,7 @@ body{
     display: flex;
     margin: 0 5%;
     flex-wrap: wrap;
-    column-gap: 20%; 
+    column-gap: 15%; 
 }
 
 
@@ -796,6 +798,13 @@ footer .bottom-details .bottom_text {
     }
     .zsiq_theme1.zsiq_floatmain {
         bottom: 67px;
+    }
+
+    .iconWrapper{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
     }
 }
 @media (min-width: 1201px){
