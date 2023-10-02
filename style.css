@@ -494,6 +494,9 @@ a.toFormSec {
 .project-img-Isadora .image {
     background-image: url('./img/img-5.png');
     transition: all .3s ease-in-out;
+    background-position: center;
+    background-size: 108% 100%;
+    background-repeat: no-repeat;
 }
 
 .project-img-Calissa .image:hover,
